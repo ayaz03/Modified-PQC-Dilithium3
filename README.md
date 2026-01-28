@@ -68,15 +68,18 @@ USE_FULL_PK      = False           # False => 32-byte address model
 FORCE_TX_COUNT: Optional[int] = 320  # Fix block to N tx, None = auto-pack
 
 MSG_BYTES = 64   # payload length used in signing
-
+These parameters are not part of the Dilithium specification, but are used to evaluate signing and verification costs in a block-style setting.
 
 
 ![Performance comparison of Dilithium3 and modified implementation](https://github.com/ayaz03/Modified-PQC-Dilithium3/raw/main/Performance-Comparison.png)
 
 **Figure:** Performance comparison of the Dilithium3 signature scheme and the proposed modified implementation. Subfigure (a) shows results using the modified parameter set, while subfigure (b) presents the original Dilithium3 parameters. The comparison demonstrates improved block utilization and better signing and verification efficiency for the proposed scheme.
 
-These parameters are not part of the Dilithium specification, but are used to evaluate signing and verification costs in a block-style setting.
+
 # ----------------------------------------------------------
+
+
+
 
 
 # Dilithium3: Key Generation, Signing, and Verification
