@@ -75,14 +75,15 @@ These parameters are not part of the Dilithium specification, but are used to ev
 
 ![Performance comparison of Dilithium3 and modified implementation](https://github.com/ayaz03/Modified-PQC-Dilithium3/raw/main/Performance-Comparison.png)
 
-**Figure:** Performance comparison of the Dilithium3 signature scheme and the proposed modified implementation. Subfigure (a) shows results using the modified parameter set, while subfigure (b) presents the original Dilithium3 parameters. The comparison demonstrates improved block utilization and better signing and verification efficiency for the proposed scheme.
+**Figure:1** Performance comparison of the Dilithium3 signature scheme and the proposed modified implementation. Subfigure (a) shows results using the modified parameter set, while subfigure (b) presents the original Dilithium3 parameters. The comparison demonstrates improved block utilization and better signing and verification efficiency for the proposed scheme.
 
 
 # --------------Security Estimation Analysis Output------------------
 
+![Security Estimation Results Using PQ-CRYSTALS Framework](https://github.com/ayaz03/Modified-PQC-Dilithium3/raw/main/Analysis-Through-Security-Estimates-Framework.png)
 
 
-The proposed parameter set was evaluated using the PQ-CRYSTALS security estimation framework against Module-SIS and Module-LWE attacks. The strongest forgery attack targets strong unforgeability and uses BKZ lattice reduction with block size 602 on a 3072-dimensional lattice, resulting in an estimated attack cost of about 124 bits, consistent with NIST Level 2 security. (online available: https://github.com/pq-crystals/security-estimates) 
+**Figure:2** The proposed parameter set was evaluated using the PQ-CRYSTALS security estimation framework against Module-SIS and Module-LWE attacks. The strongest forgery attack targets strong unforgeability and uses BKZ lattice reduction with block size 602 on a 3072-dimensional lattice, resulting in an estimated attack cost of about 124 bits, consistent with NIST Level 2 security. (online available: https://github.com/pq-crystals/security-estimates) 
 
 
 
