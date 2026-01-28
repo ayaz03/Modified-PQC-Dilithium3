@@ -57,8 +57,8 @@ this dependency.
 # Core Parameters (Excerpt)
 The following parameters are used to model transaction size, block constraints, and signing payloads for evaluation purposes:
 
-# ----------------------- Parameters and Performance Evaluation -----------------------
-
+# ------- Parameters and Performance Evaluation --------
+````
 BLOCK_SIZE_BYTES = 1000000       # 1 MB block cap
 S_BASE_BYTES     = 186             # Non-crypto per-tx bytes (from 4k baseline)
 SIG_BYTES        = 2973            # Dilithium signature bytes
@@ -68,6 +68,7 @@ USE_FULL_PK      = False           # False => 32-byte address model
 FORCE_TX_COUNT: Optional[int] = 320  # Fix block to N tx, None = auto-pack
 
 MSG_BYTES = 64   # payload length used in signing
+````
 
 These parameters are not part of the Dilithium specification, but are used to evaluate signing and verification costs in a block-style setting.
 
