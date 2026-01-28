@@ -71,7 +71,7 @@ MSG_BYTES = 64   # payload length used in signing
 
 
 
-![Performance comparison of Dilithium3 and modified implementation](images/Dilithiumcompare.png)
+![Performance comparison of Dilithium3 and modified implementation](https://github.com/ayaz03/Modified-PQC-Dilithium3/raw/main/Performance-Comparison.png)
 
 **Figure:** Performance comparison of the Dilithium3 signature scheme and the proposed modified implementation. Subfigure (a) shows results using the modified parameter set, while subfigure (b) presents the original Dilithium3 parameters. The comparison demonstrates improved block utilization and better signing and verification efficiency for the proposed scheme.
 
