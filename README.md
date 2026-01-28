@@ -68,6 +68,7 @@ USE_FULL_PK      = False           # False => 32-byte address model
 FORCE_TX_COUNT: Optional[int] = 320  # Fix block to N tx, None = auto-pack
 
 MSG_BYTES = 64   # payload length used in signing
+
 These parameters are not part of the Dilithium specification, but are used to evaluate signing and verification costs in a block-style setting.
 
 
