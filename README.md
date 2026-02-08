@@ -78,7 +78,7 @@ These parameters are not part of the Dilithium specification, but are used to ev
 **Figure:1** Performance comparison of the Dilithium3 signature scheme and the proposed modified implementation. Subfigure (a) shows results using the modified parameter set, while subfigure (b) presents the original Dilithium3 parameters. The comparison demonstrates improved block utilization and better signing and verification efficiency for the proposed scheme.
 
 
-# --------------Security Estimation Analysis Output------------------
+# -----Security Estimation Analysis Output------
 
 ![Security Estimation Results Using PQ-CRYSTALS Framework](https://github.com/ayaz03/Modified-PQC-Dilithium3/raw/main/Analysis-Through-Security-Estimates-Framework.png)
 
