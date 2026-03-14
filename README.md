@@ -4,20 +4,19 @@ This repository is intended strictly for research and educational purposes.
 
 # Overview
 
-This repository contains a modified Python implementation of CRYSTALS-Dilithium3, derived from the original dilithium-py project.
-The modifications focus exclusively on Dilithium3, with changes applied to the key generation, signing, and signature verification logic.
+This repository contains a modified Python implementation of Module-Lattice-Based Digital Signature Algorithm ( ML-DSA), derived from the original dilithium-py project. The modifications focus exclusively on ML-DSA-65(Dilithium3), with changes applied to the key generation, signing, and signature verification logic.
 All other variants (Dilithium2, Dilithium5 etc.) have been removed to keep the codebase minimal and suitable for experimentation and performance analysis.
 This workflow demonstrates the core cryptographic operations used throughout the modified codebase.
 
 # Purpose of Modifications.
 
 The modifications in this repository are intended to support:
-Performance evaluation of Dilithium3 signing and verification
+Performance evaluation of modified ML-DSA signing and verification
 Controlled experimentation with transaction and block-size models
 Academic analysis in post-quantum blockchain and authentication systems
 The implementation prioritizes clarity and experimentation, not production security.
 
-# Original Source and Credits
+<!-- # Original Source and Credits
 
 This project is derived from the original open-source implementation:
 Project: dilithium-py
@@ -26,11 +25,11 @@ Original Repository:
 https://github.com/GiacomoPope/dilithium-py 
 
 All credit for the original implementation belongs to the original author.
-This repository introduces research-focused modifications limited to Dilithium3.
+This repository introduces research-focused modifications limited to Dilithium3.-->
 
 # License
 
-This project is released under the MIT License, consistent with the original repository.
+This project is released under the MIT License, consistent with the original repository of dilithium-py.
 
 
 # Installation
@@ -61,7 +60,7 @@ The following parameters are used to model transaction size, block constraints, 
 ````
 BLOCK_SIZE_BYTES = 1000000       # 1 MB block cap
 S_BASE_BYTES     = 186             # Non-crypto per-tx bytes (from 4k baseline)
-SIG_BYTES        = 2973            # Dilithium signature bytes
+SIG_BYTES        = 2973            # Modified ML-DSA signature bytes
 ADDR_BYTES       = 32              # 32-byte key-hash (address), NOT full PK
 FULL_PK_BYTES    = 1952            # Only used if USE_FULL_PK=True
 USE_FULL_PK      = False           # False => 32-byte address model
@@ -75,7 +74,7 @@ These parameters are not part of the Dilithium specification, but are used to ev
 
 ![Performance comparison of Dilithium3 and modified implementation](https://github.com/ayaz03/Modified-PQC-Dilithium3/raw/main/Performance-Comparison.png)
 
-**Figure:1** Performance comparison of the Dilithium3 signature scheme and the proposed modified implementation. Subfigure (a) shows results using the modified parameter set, while subfigure (b) presents the original Dilithium3 parameters. The comparison demonstrates improved block utilization and better signing and verification efficiency for the proposed scheme.
+**Figure:1** Performance comparison of the ML-DSA-65(Dilithium3) signature scheme and the proposed modified ML-DSA implementation. Subfigure (a) shows results using the modified parameter set, while subfigure (b) presents the original ML-DSA65 parameters. The comparison demonstrates improved block utilization and better signing and verification efficiency for the proposed scheme.
 
 
 # -----Security Estimation Analysis Output------
@@ -90,7 +89,7 @@ These parameters are not part of the Dilithium specification, but are used to ev
 
 # Dilithium3: Key Generation, Signing, and Verification
 
-Below is a minimal illustrative example showing how the modified Dilithium3 implementation is used.
+Below is a minimal illustrative example showing how the modified ML-DSA implementation is used.
 This snippet is included for introduction and clarity only.
 
 from dilithium_py.dilithium import Dilithium3
@@ -149,11 +148,11 @@ ring $R_{11} = \mathbb{F}_{11}[X] /(X^8 + 1)$ in the following way:
 
 The file [`modules.py`](src/dilithium_py/modules/modules_generic.py) contains the classes `Module` and `Matrix`.
 A module is a generalisation of a vector space, where the field
-of scalars is replaced with a ring. In the case of Dilithium, we 
+of scalars is replaced with a ring. In the case of ML-DSA, we 
 need the module with the ring $R_q$ as described above. 
 
 `Matrix` allows elements of the module to be of size $m \times n$
-For Dilithium, we need vectors of length $k$ and $l$ and a matrix
+For ML-DSA, we need vectors of length $k$ and $l$ and a matrix
 of size $l \times k$. 
 
 As an example of the operations we can perform with out `Module`
