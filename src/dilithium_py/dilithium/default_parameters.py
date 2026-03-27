@@ -1,16 +1,16 @@
 from .dilithium import Dilithium
 
 DEFAULT_PARAMETERS = {
-    "dilithium2": {
-        "d": 13,
-        "k": 4,
-        "l": 4,
-        "eta": 2,
-        "tau": 39,
-        "omega": 80,
-        "gamma_1": 131072,  # 2^17
-        "gamma_2": 95232,  # (q-1)/88
-    },
+    # "dilithium2": {
+    #     "d": 13,
+    #     "k": 4,
+    #     "l": 4,
+    #     "eta": 2,
+    #     "tau": 39,
+    #     "omega": 80,
+    #     "gamma_1": 131072,  # 2^17
+    #     "gamma_2": 95232,  # (q-1)/88
+    # },
     "dilithium3": {
         "d": 13,
         "k": 6, #set from 6 to 2
