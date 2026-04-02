@@ -1,4 +1,4 @@
-# CRYSTALS-Dilithium3 Python Implementation
+# ML-DSA Python Implementation
 [!CAUTION]
 This repository is intended strictly for research and educational purposes.
 
