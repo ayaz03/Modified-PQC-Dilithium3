@@ -87,7 +87,7 @@ These parameters are not part of the Dilithium specification, but are used to ev
 
 
 
-# Dilithium3: Key Generation, Signing, and Verification
+# ML-DSA: Key Generation, Signing, and Verification
 
 Below is a minimal illustrative example showing how the modified ML-DSA implementation is used.
 This snippet is included for introduction and clarity only.
